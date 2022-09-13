@@ -173,7 +173,7 @@ if ($conn->query($borrow_sql) === TRUE) {
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body class="bg-light">
+  <body class="bg-" style="background-color:#FFD8A9";>
 
 <div class="container">
   <main>
@@ -183,9 +183,12 @@ if ($conn->query($borrow_sql) === TRUE) {
                 <h1 class="fw-light"> Perpustakaan</h1>
                 <p class="lead text-muted">Website ini bisa mempermudah proses pinjam meminjam buku</p>
                 <p>
-                    <a href="readBooks.php" class="btn btn-primary my-2">Buku</a>
-                    <a href="readMembers.php" class="btn btn-primary my-2">Member</a>
-                    <a href="readBorrow.php" class="btn btn-primary my-2">Pinjaman Buku</a>
+                    <a href="readBooks.php" class="btn btn- my-2" style="background-color:
+#F1A661;">Buku</a>
+                    <a href="readMembers.php" class="btn btn- my-2" style="background-color:
+#F1A661;">Member</a>
+                    <a href="readBorrow.php" class="btn btn- my-2" style="background-color:
+#F1A661;">Pinjaman Buku</a>
                 </p>
             </div>
         </div>

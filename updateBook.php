@@ -100,7 +100,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body class="bg-light">
+  <body class="bg-" style="background-color:#FFD8A9;">
     
 <div class="container">
   <main>
@@ -118,7 +118,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
             <div class="col-12">
               <input type="text" name="book_id" value="<?php echo $_GET['book_id']; ?>" hidden>
               <label for="title" class="form-label">Judul</label>
-              <input type="text" name="title" class="form-control" id="title" value="<?php echo $title ?>" required>
+              <input type="text" name="title" class="form-control" id="title" style="background-color:#FDEEDC;" value="<?php echo $title ?>" required>
               <div class="invalid-feedback">
                 Masukkan judul buku yang valid.
               </div>
@@ -127,7 +127,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
             <div class="col-12">
               <label for="author" class="form-label">Penulis</label>
               <div class="input-group has-validation">
-                <input type="text" name="author" class="form-control" id="author" value="<?php echo $author ?>" required>
+                <input type="text" name="author" class="form-control" id="author" style="background-color:#FDEEDC;" value="<?php echo $author ?>" required>
               <div class="invalid-feedback">
                 Masukkan nama penulis.
                 </div>
@@ -136,18 +136,18 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
             <div class="col-12">
               <label for="published_date" class="form-label">Tanggal Terbit</label>
-              <input type="date" name="published_date" value="<?php echo $published_date ?>" class="form-control" id="published_date" required>
+              <input type="date" name="published_date"  style="background-color:#FDEEDC;" value="<?php echo $published_date ?>" class="form-control" id="published_date" required>
               <div class="invalid-feedback">
                 Masukkan tanggal buku diterbitkan.
               </div>
             </div>
 
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Update buku</button>
+          <button class="w-100 btn btn- btn-lg" style="background-color:#F1A661;" type="submit">Update buku</button>
         </form>
       </div>
     </div>
   </main>
-
+  <div class="back"><button style="border:none; border-radius: 7px; background-color:#F1A661; width: 100px; height:50px; margin-left:420px; margin-top:30px;" ><a href="index.php" style="color:black; text-decoration:none; font-size: 20px;">Kembali</a></button></div>
   <footer class="my-5 pt-5 text-muted text-center text-small">
     <p class="mb-1">&copy; 2022 Company Name</p>
     <ul class="list-inline">

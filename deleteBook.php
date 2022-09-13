@@ -94,7 +94,7 @@ if (isset($_GET['book_id'])) {
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body class="bg-light">
+  <body class="bg-" style="background-color:#FFD8A9;">
     
 <div class="container">
   <main>
