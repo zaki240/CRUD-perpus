@@ -64,14 +64,14 @@
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body class="bg-light">
+  <body class="bg-" style="background-color:#FFD8A9;">
     
 <div class="container">
   <main>
     <div class="py-5 text-center">
       <h2>Data peminjaman buku</h2>
       <p class="lead">Halaman ini memuat seluruh buku yang ada dipinjam</p>
-      <a href="inputBorrow.php" class="btn btn-primary my-2">Pinjam buku</a>
+      <a href="inputBorrow.php" class="btn btn- my-2" style="background-color:#F1A661;">Pinjam buku</a>
     </div>
 
     <div class="row g-5">
@@ -115,8 +115,8 @@
                         echo "<td>".$row['title']."</td>";
                         echo "<td>".$row['first_name']."</td>";
                         echo "<td>".$row['status']."</td>";
-                        echo "<td>"."<a type='button' class='btn btn-primary' href='updateBorrow.php?borrow_id=".$row['borrow_id']."'>Update</button>"."</td";
-                        echo "<td>"."<a type='button' class='btn btn-danger' href='deleteBorrow.php?borrow_id=".$row['borrow_id']."'>Hapus</button>"."</td";
+                        echo "<td>"."<a type='button' class='btn btn-' style='background-color:#E38B29; color:white;' href='updateBorrow.php?borrow_id=".$row['borrow_id']."'>Update</button>"."</td";
+                        echo "<td>"."<a type='button' class='btn btn-' style='background-color:rgb(209, 103, 3); color:white;' href='deleteBorrow.php?borrow_id=".$row['borrow_id']."'>Hapus</button>"."</td";
                         echo "</tr>";
                     }
                 } else {
@@ -130,7 +130,7 @@
       </div>
     </div>
   </main>
-  <div class="back"><button style="border:none; border-radius: 7px; background-color:#0d6efd; width: 100px; height:50px; margin-left:420px; margin-top:30px;" ><a href="index.php" style="color:white; text-decoration:none; font-size: 20px;">Kembali</a></button></div>
+  <div class="back"><button style="border:none; border-radius: 7px; background-color:#F1A661; width: 100px; height:50px; margin-left:420px; margin-top:30px;" ><a href="index.php" style="color:white; text-decoration:none; font-size: 20px;">Kembali</a></button></div>
   <footer class="my-5 pt-5 text-muted text-center text-small">
     <p class="mb-1">&copy; 2022 Company Name</p>
     <ul class="list-inline">

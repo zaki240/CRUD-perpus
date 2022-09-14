@@ -81,13 +81,13 @@ if ($conn->connect_error) {
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body class="bg-light">
+  <body class="bg-" style="background-color:#FFD8A9;">
     
 <div class="container">
   <main>
     <div class="py-5 text-center">
       <h2>Pinjam buku</h2>
-      <p class="lead">Silakan isi data buku dan peminjam yang akan dimasukkan ke database.</p>
+      <p class="lead">Silakan isi data buku dan peminjam yang akan dimasukkan </p>
     </div>
 
     <div class="row g-5">
@@ -96,8 +96,8 @@ if ($conn->connect_error) {
         <form class="needs-validation" novalidate method="post" action="addBorrow.php">
           <div class="row g-3">
             <div class="col-12">
-              <label for="book_id" class="form-label">Buku</label>
-                <select name="book_id" id="book_id">
+              <label for="book_id" class="form-label" >Buku</label>
+                <select name="book_id" id="book_id" style="background-color:#FDEEDC;">
                     <?php
                     $sql = "SELECT * FROM book";
                     $result = $conn->query($sql);
@@ -111,7 +111,7 @@ if ($conn->connect_error) {
 
             <div class="col-12">
               <label for="member_id" class="form-label">Peminjam</label>
-                <select name="member_id" id="member_id">
+                <select name="member_id" id="member_id" style="background-color:#FDEEDC;">
                     <?php
                     $sql = "SELECT * FROM member";
                     $result = $conn->query($sql);
@@ -123,7 +123,7 @@ if ($conn->connect_error) {
                 </select>
             </div>
 
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Pinjam buku</button>
+          <button class="w-100 btn btn- btn-lg"style="background-color:#F1A661;" type="submit">Pinjam buku</button>
         </form>
       </div>
     </div>

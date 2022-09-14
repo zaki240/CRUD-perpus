@@ -100,13 +100,13 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body class="bg-light">
+  <body class="bg-" style="background-color:#FFD8A9;">
     
 <div class="container">
   <main>
     <div class="py-5 text-center">
       <h2>Menyunting Buku</h2>
-      <p class="lead">Silakan isi data buku yang akan diperbaharui di database.</p>
+      <p class="lead">Silakan isi data buku yang akan diperbaharui </p>
     </div>
 
     <div class="row g-5">
@@ -119,7 +119,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
               <input type="text" name="borrow_id" value="<?php echo $_GET['borrow_id']; ?>" hidden>
 
               <label for="book_id" class="form-label">ID buku</label>
-              <input type="text" name="book_id" class="form-control" id="book_id" value="<?php echo $book_id ?>" required>
+              <input type="text" name="book_id" class="form-control" id="book_id"  style="background-color:#FDEEDC;" value="<?php echo $book_id ?>" required>
               <div class="invalid-feedback">
                 Masukkan ID buku.
               </div>
@@ -128,7 +128,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
             <div class="col-12">
               <label for="member_id" class="form-label">ID member</label>
               <div class="input-group has-validation">
-                <input type="text" name="member_id" class="form-control" id="member_id" value="<?php echo $member_id ?>" required>
+                <input type="text" name="member_id" class="form-control" id="member_id"  style="background-color:#FDEEDC;" value="<?php echo $member_id ?>" required>
               <div class="invalid-feedback">
                 Masukkan ID member.
                 </div>
@@ -137,8 +137,8 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
             <div class="col-12">
               <label for="status" class="form-label">Status</label>
-              <select name="status" id="status" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
-                <option value="available">Tersedia</option>
+              <select name="status" id="status" class="form-select form-select-lg mb-3"  style="background-color:#FDEEDC;" aria-label=".form-select-lg example" required>
+                <option value="available" >Tersedia</option>
                 <option value="borrowed">Dipinjam</option>
               </select>              
             <div class="invalid-feedback">
@@ -146,7 +146,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
               </div>
             </div>
 
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Update data pinjaman</button>
+          <button class="w-100 btn btn- btn-lg"  style="background-color:#F1A661;" type="submit">Update data pinjaman</button>
         </form>
       </div>
     </div>
