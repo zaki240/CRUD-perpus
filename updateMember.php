@@ -100,7 +100,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body class="bg-light">
+  <body class="bg-" style="background-color:#FFD8A9;">
     
 <div class="container">
   <main>
@@ -116,7 +116,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         <form class="needs-validation" novalidate method="post" action="editMember.php">
           <div class="row g-3">
             <div class="col-12">
-              <input type="text" name="member_id" value="<?php echo $_GET['member_id']; ?>" hidden>
+              <input type="text" name="member_id"   style="background-color:#FDEEDC;" value="<?php echo $_GET['member_id']; ?>" hidden>
               <label for="first_name" class="form-label">Nama depan</label>
               <input type="text" name="first_name" class="form-control" id="first_name" value="<?php echo $first_name ?>" required>
               <div class="invalid-feedback">
@@ -127,7 +127,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
             <div class="col-12">
               <label for="last_name" class="form-label">Name belakang</label>
               <div class="input-group has-validation">
-                <input type="text" name="last_name" class="form-control" id="last_name" value="<?php echo $last_name ?>" required>
+                <input type="text" name="last_name" class="form-control" id="last_name"  style="background-color:#FDEEDC;" value="<?php echo $last_name ?>" required>
               <div class="invalid-feedback">
                 Masukkan nama belakang.
                 </div>
@@ -136,13 +136,13 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
             <div class="col-12">
               <label for="email" class="form-label">Email</label>
-              <input type="text" name="email" value="<?php echo $email ?>" class="form-control" id="email" required>
+              <input type="text" name="email"   style="background-color:#FDEEDC;" value="<?php echo $email ?>" class="form-control" id="email" required>
               <div class="invalid-feedback">
                 Masukkan email.
               </div>
             </div>
 
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Update data</button>
+          <button class="w-100 btn btn- btn-lg" style="background-color:#F1A661;" type="submit">Update data</button>
         </form>
       </div>
     </div>

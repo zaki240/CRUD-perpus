@@ -64,14 +64,14 @@
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body class="bg-light">
+  <body class="bg-" style="background-color:#FFD8A9;">
     
 <div class="container">
   <main>
     <div class="py-5 text-center">
       <h2>Data Member</h2>
       <p class="lead">Halaman ini memuat seluruh member yang ada di database</p>
-      <a href="inputMember.php" class="btn btn-primary my-2">Tambah member</a>
+      <a href="inputMember.php" class="btn btn- my-2" style="background-color:#F1A661;">Tambah member</a>
     </div>
 
     <div class="row g-5">
@@ -115,8 +115,8 @@
                         echo "<td>".$row['last_name']."</td>";
                         echo "<td>".$row['email']."</td>";
                         echo "<td>".$row['register_date']."</td>";
-                        echo "<td>"."<a type='button' class='btn btn-primary' href='updateMember.php?member_id=".$row['member_id']."'>Update</button>"."</td";
-                        echo "<td>"."<a type='button' class='btn btn-danger' href='deleteMember.php?member_id=".$row['member_id']."'>Hapus</button>"."</td";
+                        echo "<td>"."<a type='button' class='btn btn-'  style='background-color:#E38B29; color:white;' href='updateMember.php?member_id=".$row['member_id']."'>Update</button>"."</td";
+                        echo "<td>"."<a type='button' class='btn btn-'  style='background-color:rgb(209, 103, 3); color:white;' href='deleteMember.php?member_id=".$row['member_id']."'>Hapus</button>"."</td";
                         echo "</tr>";
                     }
                 } else {

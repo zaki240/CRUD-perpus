@@ -64,13 +64,13 @@
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body class="bg-light">
+  <body class="bg-" style="background-color:#FFD8A9;">
     
 <div class="container">
   <main>
     <div class="py-5 text-center">
       <h2>Menambahkan Member</h2>
-      <p class="lead">Silakan isi data member yang akan didaftarkan ke database.</p>
+      <p class="lead">Silakan isi data member yang akan didaftarkan</p>
     </div>
 
     <div class="row g-5">
@@ -81,7 +81,7 @@
           <div class="row g-3">
             <div class="col-sm-6">
               <label for="first_name" class="form-label">Nama depan</label>
-              <input name="first_name" type="text" class="form-control" id="first_name" placeholder="" value="" required>
+              <input name="first_name" type="text" class="form-control" id="first_name" placeholder="" style="background-color:#FDEEDC;" value="" required>
               <div class="invalid-feedback">
                 Nama depan harus diisi.
               </div>
@@ -89,7 +89,7 @@
 
             <div class="col-sm-6">
               <label for="last_name" class="form-label">Nama belakang</label>
-              <input type="text" name="last_name" class="form-control" id="last_name" placeholder="" value="" required>
+              <input type="text" name="last_name" class="form-control" id="last_name" placeholder="" style="background-color:#FDEEDC;" value="" required>
               <div class="invalid-feedback">
                 Nama belakang diisi.
               </div>
@@ -97,13 +97,13 @@
 
             <div class="col-12">
               <label for="email" class="form-label">Email</label>
-              <input type="email" name="email" class="form-control" id="email" placeholder="you@example.com" required>
+              <input type="email" name="email" class="form-control" id="email" placeholder=""  style="background-color:#FDEEDC;" required>
               <div class="invalid-feedback">
                 Pastikan email yang dimasukkan valid.
               </div>
             </div>
 
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Tambahkan member</button>
+          <button class="w-100 btn btn- btn-lg" style="background-color:#F1A661;" type="submit">Tambahkan member</button>
         </form>
       </div>
     </div>

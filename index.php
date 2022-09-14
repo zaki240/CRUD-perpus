@@ -148,7 +148,7 @@ if ($conn->query($borrow_sql) === TRUE) {
       }
       .card1{
         display: flex;
-        border: 2px solid black;
+        border: 3px solid black;
         margin: 15px;
         padding: 6px;
         border-radius:10px;
@@ -173,7 +173,7 @@ if ($conn->query($borrow_sql) === TRUE) {
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
   </head>
-  <body class="bg-" style="background-color:#FFD8A9";>
+  <body class="bg-" style="background-color:#FFD8A9;";>
 
 <div class="container">
   <main>
