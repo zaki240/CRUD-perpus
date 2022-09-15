@@ -104,7 +104,7 @@ if (isset($_GET['book_id'])) {
     </div>
 
   </main>
-
+  <div class="back"><button style="border:none; border-radius: 7px; background-color:#F1A661; width: 100px; height:50px; margin-left:420px; margin-top:30px;" ><a href="readBooks.php" style="color:black; text-decoration:none; font-size: 20px;">Kembali</a></button></div>
   <footer class="my-5 pt-5 text-muted text-center text-small">
     <p class="mb-1">&copy; 2022 Company Name</p>
     <ul class="list-inline">
